@@ -21,7 +21,7 @@
     onDestroy(unsubscribe)
 </script>
 
-<Router url="{url}">
+<Router url={url}>
   <nav>
     <Link to="/">Todos</Link>
     <Link to="numeric">Numeric</Link>
@@ -39,7 +39,6 @@
 </Router>
 
 <h1>The count is {count_value}</h1>
-
 
 <!--<h1>Custom count is {$countInstance}</h1>-->
 <!--<button on:click={countInstance.increment}>Increment</button>-->

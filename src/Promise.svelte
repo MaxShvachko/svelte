@@ -1,5 +1,5 @@
 <script>
-    import { onMount, onDestroy, beforeUpdate, afterUpdate, tick } from 'svelte';
+    import { onMount, onDestroy, beforeUpdate, afterUpdate } from 'svelte';
     let promise
 
     let data;
