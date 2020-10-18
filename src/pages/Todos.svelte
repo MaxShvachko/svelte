@@ -1,5 +1,5 @@
 <script>
-  import TodoItem from './TodoItem.svelte';
+  import TodoItem from '../components/TodoItem.svelte';
 
   const textWithTag = 'This tag with <strong>Text</strong>';
 
