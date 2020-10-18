@@ -2,6 +2,7 @@
     import { slide } from 'svelte/transition';
 
     let showItems = true;
+    $: redText = showItems ? 'redText': "";
     let i = 5;
     let items = ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten'];
 </script>
@@ -11,9 +12,12 @@
         padding: 0.5em 0;
         border-top: 1px solid #eee;
     }
+    .redText {
+        color: red;
+    }
 </style>
 
-<label>
+<label class:redText>
   <input type="checkbox" bind:checked={showItems}>
   show list
 </label>

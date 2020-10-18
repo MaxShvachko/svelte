@@ -18,9 +18,11 @@
     }
 
     beforeUpdate(() => console.log('run before update'))
-    afterUpdate(() => data = 'after update')
+    afterUpdate(() => console.log('run after update'))
 
     onDestroy(() => console.log('destroy'));
+
+    tick() //wait til the state is actually changed
 
     function handleClick() {
         promise = getRandomNumber();
